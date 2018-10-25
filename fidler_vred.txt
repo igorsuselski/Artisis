@@ -1,0 +1,6 @@
+
+GET: http://localhost:50354/api/Subscriber
+
+Host: localhost:50354
+Authorization: Basic YWRtaW46YWRtaW4=    [admin:admin]
+

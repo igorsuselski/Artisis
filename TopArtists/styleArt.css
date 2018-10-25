@@ -1,0 +1,360 @@
+body{
+    background-color: black;
+    background-image: url("img/Stage1.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#tbody{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    height: 100%
+}
+.container{
+    background-image: url("img/WallCity.jpg");
+    border-radius: 2px;
+    box-shadow: 1px 1px #696b73; 
+    opacity: 0.9;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff !important;
+    text-shadow: 1px 1px #02040a;
+    margin-bottom: 33px;
+    margin-left: 146px;
+    padding-top: 23px
+}
+p{
+    text-align: center;
+    color: #52d0e4;
+}
+img{
+    vertical-align: middle;
+    opacity: 0.9;
+    border: 2px solid #aad4ff;
+}
+img:hover{
+    border-color: white;
+}
+#load{
+    position: absolute;
+    width: 69px;
+}
+.img{
+    border: none;
+}
+#note{
+    float: right;
+    margin-top: 32px;
+    margin-right: 5px;
+}
+#genre{
+    background-color: #212c42;
+    color: white; 
+    opacity: 0.8;  
+}
+#genre:hover{
+    cursor: pointer;
+}
+#gen{
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: capitalize;
+    float: right;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 30px;
+    color: white;
+    
+}
+
+#mag{
+    margin-top: 20px;
+    margin-left: 11px;
+    border: none;
+    opacity: 0.8;
+}
+#counter{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    color: #bef3ff;
+    
+}
+
+#pull{
+   
+    background-color: #132231;
+    opacity: 0.8;
+}
+#pull:hover{
+    background-color: #2d3956;
+}
+#wait{
+    display: none;
+    text-align: center; 
+}
+a{
+    color: #cef3f3;
+    text-decoration: none;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+#goto{
+    float: right;
+    text-decoration: none;
+    color: #c5e4ff;
+    font-size: 1em;
+    margin-right: 20px;
+}
+#goto:hover{
+    color: #ffffff; 
+}
+small{
+    color: #c0c5d6;
+}
+a:link, a:active
+{
+    text-decoration: none; 
+}
+a:hover{
+    color: #a0e6ea !important;
+    cursor: pointer;  
+}
+a:visited{
+    color: #d8e4f5;
+}
+td{
+    color: white;
+    font-size: 1.1rem !important;
+}
+th{
+    opacity: 0.8;
+}
+footer{
+    width: 100%;
+    background-color: #34354e;
+    text-align: center;
+    position: relative;
+    opacity: 0.7; 
+}
+.pagination a{
+    color: rgb(11, 9, 126);
+    opacity: 0.8;
+}
+#paginUl{
+    margin-top: 5px;
+}
+.pagination .page-item .page-link{
+    color: #ffffff !important;
+    opacity: 0.7;
+}
+.page-item.active .page-link{
+    background-color: #242e54;
+}
+ul{
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    float: left;
+}
+#search{
+    width: 272px;
+    background-color: #1d232f;
+    color: #fff;  
+    float: left; 
+    margin-top: 22px;
+    margin-right: 141px;
+    border-color: #2180ea;
+    opacity: 0.8;
+}
+#tbody img{
+    width: 178px;
+    height: 178px;
+}
+#tbody img:hover{
+    cursor: default;
+}
+.albums{
+    cursor: pointer;
+    border-style: none;
+    width: 154px;
+    height: 154px;
+    -webkit-transition: border 0.5s;
+    transition: border 0.5s;
+}
+.albums:hover{
+    content: url('img/AlbumActive.gif');
+    border: 4px solid transparent;    
+    cursor: pointer;  
+}
+
+.biograph{
+    color: #efefef;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; 
+}
+
+.biograph:hover{
+    color: #bbbbf7;
+    cursor: pointer; 
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#unsubscribe{
+    color: #3f51b5;
+    margin-left: 7px;
+    text-decoration: underline;
+}
+
+#unsubscribe :visited{
+    color: rgb(14, 32, 66);
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto !important; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-backdrop {
+    position: relative;
+}
+#SubModal{
+   
+    float: right;
+    margin: auto;
+    color: #ffffff
+}
+#LogIn{
+    padding-right: 23px;
+    float: right;
+    margin: auto;
+    color: #ffffff;
+}
+#SubModal :visited{
+ color: #ffffff !important;
+}
+#LogIn :visited{
+ color: #ffffff !important;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 2em;
+    font-family: Parisienne;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/*responsive design*/
+@media screen and (max-width: 950px) {
+    td{
+    font-size: 1em;
+    }  
+    #tbody img{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 650px) {  
+    th{
+        font-size: 0.8;
+    }
+    tr{
+    font-size: 0.8em;
+    }
+   #tbody img{
+        width: 100px;
+        height: 100px;
+    }
+}
+ @media screen and (max-width: 480px) {
+   th{
+         font-size: 0.7em;
+    }
+    td{
+        font-size: 0.7em;
+    }  
+    #tbody img{
+        width: 50px;
+        height: 50px;
+    }
+    li{
+        width: 50px;
+        height: 50px;
+    }
+    #note{
+        float: left;
+    }
+} 
+   
+
+   
+
