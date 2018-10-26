@@ -9,7 +9,7 @@ $(function () {
     $("#mag").hide();
     $("#counter").hide();
     $("#note").hide();
-    let parAlbums = "/+albums";
+    const parAlbums = "/+albums";
     //let parBiography = "/+wiki";
     let pageStart = 0; let pageEnd = 0;
     //pagination [index] of pages 
@@ -37,6 +37,7 @@ $(function () {
                 return pageStart, pageEnd;
         }
     });
+
     //default click
     $("button").click((e) => {
         let id = e.target.id;
@@ -46,6 +47,7 @@ $(function () {
                 return pageStart, pageEnd;
         }
     });
+
     //user coice of selected genre
     function Genre() {
         let pickedValue = $("#genre option:selected").text();
@@ -62,6 +64,7 @@ $(function () {
                 return pickedValue;
         }
     }
+
     //create table 
     function DataList(list) {
         this.tBody = $("#tbody");
@@ -375,7 +378,6 @@ $(function () {
         });
     });
 
-
     //close the modal
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function () {
@@ -384,7 +386,6 @@ $(function () {
         $('footer').show();
     }
     
-   
 
 });
 
